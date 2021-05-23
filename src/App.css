@@ -1,0 +1,7 @@
+.app {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: "Merriweather", serif;
+  background-color: rgba(32, 30, 30, 0.863);
+}

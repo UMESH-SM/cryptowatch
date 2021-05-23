@@ -1,0 +1,44 @@
+.header {
+  height: 10vh;
+  background-color: rgb(19, 18, 18);
+  display: flex;
+}
+
+.header__appNameLink {
+  text-decoration: none;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__appName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-family: "Lobster", cursive;
+  font-size: 1.8em;
+}
+
+.header__appName:hover {
+  color: lightgreen;
+  cursor: pointer;
+}
+
+.header__navbar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header__links {
+  color: aqua;
+  text-decoration: none;
+  margin-right: 15%;
+}
+
+.header__links:nth-of-type(2) {
+  margin-right: 25%;
+}

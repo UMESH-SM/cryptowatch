@@ -1,0 +1,35 @@
+.heroCard {
+  width: 60%;
+  height: 70%;
+  background-color: rgba(0, 255, 255, 0.849);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.heroCard__firstRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.heroCard__name {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.heroCard__image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.heroCard__secondRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2em;
+}
