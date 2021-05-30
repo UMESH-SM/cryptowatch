@@ -25,7 +25,7 @@ function App() {
   async function fetchData1() {
     try {
       const res1 = await axios(
-        `https://api.nomics.com/v1/currencies/ticker?key=${REACT_APP_FIRST_API_KEY}&interval=1d,30d&per-page=100&page=1`
+        `https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_FIRST_API_KEY}&interval=1d,30d&per-page=100&page=1`
       );
       const fetchData1 = res1.data;
       setData(fetchData1);
@@ -46,7 +46,7 @@ function App() {
         let res3;
         try {
           res3 = await axios(
-            `https://api.nomics.com/v1/currencies/ticker?key=${REACT_APP_FIRST_API_KEY}&ids=${savedString}&interval=1d,30d&per-page=100&page=1`
+            `https://api.nomics.com/v1/currencies/ticker?key=${process.env.REACT_APP_FIRST_API_KEY}&ids=${savedString}&interval=1d,30d&per-page=100&page=1`
           );
           const fetchData3 = res3.data;
           setSavedData(fetchData3);
